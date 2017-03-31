@@ -95,7 +95,7 @@ section{
 	top:0;
 	bottom:0;
 }
-.showcase iframe{
+.showcase iframe, .showcase img{
 	transform:scale(0.5);
 	border:0;
 }
@@ -106,9 +106,16 @@ section{
 	</div>
 		<div class="video-container">
 			<img src="video.jpg" class="video"/>
-			<video autoplay loop>
+			<video autoplay loop id="myVideo">
 			  <source src="video-1080.mp4" type="video/mp4" muted>
 			</video>
+			<script>
+	var vid = document.getElementById("myVideo");
+	function setPlaySpeed() { 
+	    vid.playbackRate = 0.95;
+	} 
+	window.onload = setPlaySpeed;
+</script>
 		</div>
 
 		<section id="brands-worked-with">
@@ -134,8 +141,8 @@ section{
 			</div>
 
 			<div class="showcase">
-				<iframe src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/riva.jpg" width="600" height="1100" style="margin:0 -150px 0 0;"></iframe>
-				<iframe src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/tipo.jpg" width="600" height="1100"></iframe>
+				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/riva.jpg" alt="Riva Email" height="115%" style="margin:0 -50px 0 0;"/>
+				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/tipo.jpg" alt="Tipo Email" height="115%"/>
 			</div>
 		</div>
 		<a href="https://www.rla.co.uk" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/logo--white.svg" alt="RLA Logo" class="logo" title="View website"/></a>
@@ -151,7 +158,7 @@ section{
 			</div>
 
 			<div class="showcase">
-				<iframe src="//foxes.co.uk" width="1100" height="1100"></iframe>
+				<iframe src="//foxes.co.uk" width="1100" height="115%"></iframe>
 			</div>
 		</div>
 		<a href="http://ascesismedia.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/ascesis_logo.svg" alt="Ascesis Logo" class="logo" title="View website"/></a>
@@ -164,6 +171,10 @@ section{
 			<h2>August 2015 - February 2017</h2>
 			<div class="content">
 				<p>Appius are a Bournemouth based company which maintains and builds websites for high end clients (These include DLR London, Electricity North West and Teachers Building Society). I worked closely with designers and other developers to achieve the best possible results for both clients and the company itself.  One of the most important tasks I had to carry out was testing the functionality of web pages and comparing the appearance to the original design.</p>
+			</div>
+			
+			<div class="showcase">
+				<iframe src="//www.teachersbs.co.uk/" width="1100" height="115%"></iframe>
 			</div>
 		</div>
 		<a href="http://www.appius.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/appius_logo.svg" alt="Appius Logo" class="logo" title="View website"/></a>
