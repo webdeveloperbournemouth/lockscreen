@@ -1,6 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CV of Michael Lewis O'Mara</title>
 <style type="text/css">
 body{
 	margin:0;
@@ -14,6 +15,21 @@ html{
 }
 *{
 	box-sizing: border-box;
+}
+h2{
+	font-size:24px;
+}
+h3{
+	font-size:24px;
+}
+ul{
+	margin:0;
+	padding:0 0 0 18px;
+}
+ul li{
+	padding:5px 0;
+	margin: 0;
+	line-height: 1.2;
 }
 .background{
 	position:fixed;
@@ -52,6 +68,7 @@ section{
 	background:rgba(0,0,0,0.5);
 	position:relative;
 	color: white;
+	overflow: hidden;
 }
 .button{
 	position: absolute;
@@ -68,6 +85,44 @@ section{
 	left:0;
 	right:auto;
 }
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+
+/* The element to apply the animation to */
+.first-button {
+     animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+
+.first-button:hover{
+	     animation: none 2s infinite;
+ -webkit-animation: none 2s infinite;
+ -moz-animation: none 2s infinite;
+ -o-animation: none 2s infinite;
+}
 .content{
 	position: absolute;
 	top:37%;
@@ -77,8 +132,7 @@ section{
 	font-size:19px;
 }
 .wrap{
-	max-width:1024px;
-	padding:20px 20px 20px 10%;
+	padding:20px 10% 20px 10%;
 }
 .logo{
 	position:absolute;
@@ -120,52 +174,81 @@ section{
 
 		<section id="brands-worked-with">
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h1 style="margin:35px 0; font-size:40px;">Brands worked with...</h1>
-			<div class="content" style="margin:-10px;">
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmwmini.svg" width="150" height="150"/>
+			<div style="position:relative;">
+				<h2 style="font-size:40px;margin:35px 0; position:absolute;">Brands worked with...</h2>
+				<h2 style="font-size:40px;margin:35px 0; position:absolute; right:0;">Technical skills/software experience</h2>
+			</div>
+			<div class="content" style="margin:-10px; top:59%;">
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmwmini.svg" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmw.png" width="150" height="150"/>
-				</div><div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volvo.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmw.png" width="125" height="125"/>
+				</div><div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volvo.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volkswagen.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volkswagen.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/ford.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/ford.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/scania.svg" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/scania.svg" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/jeep.svg" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/jeep.svg" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/fiat.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/fiat.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/alfa.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/alfa.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/peugeot.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/peugeot.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/citroen.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/citroen.png" width="125" height="125"/>
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:160px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/dlr.png" width="150" height="150"/>
+				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/dlr.png" width="125" height="125"/>
 				</div>
 			</div>
+
+
+			<div class="content" style="top:59%; right:10%; font-size:14px; padding:20px; background:rgba(255,255,255,0.7); color:#000; text-shadow:0 0; height:600px; overflow-y:scroll;">
+
+			<ul>
+<li>Content Management Systems &ndash; Including Wordpress, Joomla, Drupal, Sharepoint, Sitefinity and Ektron. I have some knowledge in PHP, ASP.NET and Twig through Timber.</li>
+<li>Web tracking - I have previous experience in using web trackers such as HotJar and Google Analytics to analyse what keywords do and do not work</li>
+<li>SEO Tools - Moz/Woorank/Xenu/Screaming Frog</li>
+<li>Google Tools - Google Analytics, Google Adwords, Google Search Console</li>
+<li>Pingdom - Useful tool for monitoring server uptime and downtime, alerts can be setup to to indicate when a server is down.</li>
+<li>Version control - Tortoise SVN, Sourcetree, TFS Version Control, Git through BitBucket, GitHub, Atlassian Stash</li>
+<li>Responsive Websites - Laptop, Desktop, Tablet, Mobile friendly made either using media queries in CSS or creating two separate sites with a redirect to the relevant site depending on the user&rsquo;s current device.</li>
+<li>Developing in HTML/HTML5 - in accordance with W3C standards if needed</li>
+<li>Developing in CSS/SCSS/SASS - including creating rollback code for older devices and browsers which do not support newer technologies. I am also experienced in writing SCSS code using programs such as Prepros and Koala to compile and compress code. I prefer to use BEM (Block, Element, Modifier methodology) also known as OOCSS (Object Oriented CSS) methodology for writing class names in HTML and CSS.</li>
+<li>Adobe CS2-6 - Using programs such as Photoshop, Illustrator, Fireworks, InDesign, Edge, Dreamweaver, Premiere Pro, Flash Professional</li>
+<li>JavaScript libraries such as jQuery UI, Angular and Bootstrap</li>
+<li>Microsoft Technologies - Sharepoint, Visual Studio, Excel, Office, Powerpoint, Access, Outlook</li>
+<li>Remote control and desktop sharing software - Such as TeamViewer and LogMeIn</li>
+<li>Databases - I have experience in overwriting and backing up database types such as MySQL</li>
+<li>Code editing programs - Notepad++, Sublime Text, Visual Studio, Dreamweaver</li>
+<li>Development Environment - XAMPP, Vagrant, Wamp and IIS Manager</li>
+<li>Time Tracking and Task Tracking - I have used various time and task tracking websites such as Targetprocess, Concept, Wrike, Harvest and JIRA</li>
+<li>Email Marketing - Sidekick, Campaign Monitor, Pure360, MailChimp</li>
+<li>CDN&rsquo;s and HTTPS - I have knowledgeable experience of using CDN&rsquo;s and a thorough understanding of what they do and how this can affect Google Rankings. I have also experience in setting up https for security and SEO purposes.</li>
+</ul>
 		</div>
-		<a href="#section1" class="previous-button button">Previous Role ></a>
+	</div>
+		<a href="#section1" class="previous-button button first-button">Previous Role ></a>
 	</section>
 			
 	<section id="section1">
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h1>RLA Group - Front End Developer</h1>
-			<h2>August 2015 - February 2017</h2>
+			<h2>RLA Group - Front End Developer</h2>
+			<h3>August 2015 - February 2017</h3>
 			<div class="content">
 				<p>The RLA Group are an advertising agency based in Christchurch predominantly working with Automotive manufacturers such as The Fiat Group (Fiat, Jeep, Abarth, Alfa Romeo, Chrysler), Volkswagen, Ford, Peugeot & Citroen, BMW & Mini, Scania and Kia Motors, in most cases on a weekly basis. The majority  have mainly worked on building HTML emails both from scratch and using existing infrastructure.</p>
 			</div>
@@ -181,8 +264,8 @@ section{
 	</section>
 	<section id="section2">
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h1>Ascesis Media - Front End Developer</h1>
-			<h2>August 2015 - February 2017</h2>
+			<h2>Ascesis Media - Front End Developer</h2>
+			<h3>August 2015 - February 2017</h3>
 			<div class="content">
 				<p>During my employment at Ascesis Media, I helped to create websites for local companies  and also carriedout SEO improvements. Working closely as a team with other developers and designers,  I also helped to improve the company's infrastructure in terms of organising web files and password storage I became a confident user of Slack to keep in touch with other members of the team.</p>
 			</div>
@@ -197,8 +280,8 @@ section{
 	</section>
 	<section id="section3">
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h1>Appius - Front End Developer</h1>
-			<h2>August 2015 - February 2017</h2>
+			<h2>Appius - Front End Developer</h2>
+			<h3>August 2015 - February 2017</h3>
 			<div class="content">
 				<p>Appius are a Bournemouth based company which maintains and builds websites for high end clients (These include DLR London, Electricity North West and Teachers Building Society). I worked closely with designers and other developers to achieve the best possible results for both clients and the company itself.  One of the most important tasks I had to carry out was testing the functionality of web pages and comparing the appearance to the original design.</p>
 			</div>
@@ -213,8 +296,8 @@ section{
 	</section>
 		<section id="section4">
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h1>Brainstormers - Front End Developer</h1>
-			<h2>August 2015 - February 2017</h2>
+			<h2>Brainstormers - Front End Developer</h2>
+			<h3>August 2015 - February 2017</h3>
 			<div class="content">
 				<p>A Bournemouth based website development company. I have completed numerous websites for up and coming and new businesses, finished to a professional standard.  Good customer service skills were also required. While working for Brainstormers i carried out a number of SEO related tasks on a monthly basis for most clients, this involved writing a monthly report on what work had been carried out and which work was remaining to achieve the client's goals.</p>
 			</div>
