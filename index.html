@@ -2,6 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CV of Michael Lewis O'Mara</title>
+<!-- still a working progress -->
 <style type="text/css">
 body{
 	margin:0;
@@ -87,7 +88,7 @@ section{
 }
 
 .brands{
-	margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; width: 13%;
+	margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; width: 20%;
 }
 .brands img{
 	width: 100%;
@@ -148,36 +149,55 @@ section{
 	font-size:19px;
 	z-index:1;
 }
+.content.special{
+	top:59%; right:10%; margin:-10px 0; padding:20px; background:rgba(255,255,255,0.7); color:#000; text-shadow:0 0; height:600px; overflow-y:scroll;
+}
 header{
 	padding:20px 10% 5px 10%;
-	background: #556475;;
+	background: #556475;
+	min-height:140px;
+	position: relative;
 }
 .wrap{
 	padding:20px 10% 5px 10%;
 }
 .logo{
 	position:absolute;
-	top:3.5%;
+	top:50%;
+	transform: translateY(-50%);
 	right:10%;
 	margin:0 auto;
-	max-height:80px;
-	max-width: 33%;
 	opacity:0.75;
+}
+.logo img{
+	max-width: 20vw;
 }
 .showcase{
 	position: absolute;
 	right:10%;
-	top:0;
-	bottom:0;
+	width: 34%;
+	text-align: right;
 }
-.showcase iframe, .showcase img{
-	transform:scale(0.5);
+.showcase iframe{
+	transform:scale(0.5) translateY(19%);
 	border:0;
-	-webkit-transform-origin-x: 100%;
+	-webkit-transform-origin-y: 0%;
+	-webkit-transform-origin-x: 0%;
+	width: 200%;
+	height: 115%;
+}
+.showcase img{
+	max-width: 100%;
+	max-height: 550px;
+	height: auto;
+	transform:translateY(19%);
 }
 .profile-image{
 	border:5px solid white; position:absolute; right:10%;    top: 37%;
     transform: translateY(-50%);
+}
+.and{
+	float:right;
 }
 @media screen and (max-width: 1350px) {
 	.content{
@@ -190,13 +210,35 @@ header{
 		left:0;
 		right:0;
 		text-align: center;
+		width: 100%;
 	}
-	.showcase iframe, .showcase img{
+	.content.special{
+		left:0;
+		right:0;
+		margin:30px 0;
+		height:40%;
+	}
+	.showcase iframe{
 		-webkit-transform-origin-y:0;
 		-webkit-transform-origin-x:50%;
+		transform: translateY(0%);
+		width: 100%;
+		height:600px;
+	}
+	.showcase img{
+		transform: translateY(0%);
 	}
 	.profile-image{
 		display: none;
+	}
+	.brands{
+		width: 12%;
+	}
+	.and:before{
+		content:" and ";
+	}
+	.and{
+		float:none;
 	}
 }
 </style>
@@ -207,7 +249,7 @@ header{
 		<section id="about">
 		
 			<header style="position:relative;">
-				<h2 style="font-size:32px;margin:35px 0;display:inline-block;">A bit about me</h2>
+				<h2 style="font-size:2.5vw;margin:35px 0;display:inline-block;">A bit about me</h2>
 			</header>
 			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
@@ -227,50 +269,49 @@ header{
 			<section id="brands-worked-with">
 		
 			<header style="position:relative;">
-				<h2 style="font-size:32px;margin:35px 0; display:inline-block;">Brands worked with...</h2>
-				<h2 style="font-size:32px;margin:35px 0; right:0; float:right;">Technical skills/software experience</h2>
+				<h2 style="font-size:2.5vw;margin:35px 0;">Brands worked with <span class="and">Technical skills/software experience</span></h2>
 			</header>
 			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content" style="margin:-10px; top:59%; max-height:602px; overflow-y:auto; text-align:center;">
 				<div class="brands first">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmwmini.svg" />
+					<img src="clients/bmwmini.svg" />
 				</div>
 				<div class="brands first">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmw.png" />
+					<img src="clients/bmw.png" />
 				</div><div class="brands first">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volvo.png" />
+					<img src="clients/volvo.png" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volkswagen.png" />
+					<img src="clients/volkswagen.png" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/ford.png" />
+					<img src="clients/ford.png" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/scania.svg" />
+					<img src="clients/scania.svg" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/jeep.svg" />
+					<img src="clients/jeep.svg" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/fiat.png" />
+					<img src="clients/fiat.png" />
 				</div>
 				<div class="brands">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/alfa.png" />
+					<img src="clients/alfa.png" />
 				</div>
 				<div class="brands last">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/peugeot.png" />
+					<img src="clients/peugeot.png" />
 				</div>
 				<div class="brands last">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/citroen.png" />
+					<img src="clients/citroen.png" />
 				</div>
 				<div class="brands last">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/dlr.png"/>
+					<img src="clients/dlr.png"/>
 				</div>
 			</div>
 
 
-			<div class="content" style="top:59%; right:10%; margin:-10px 0; padding:20px; background:rgba(255,255,255,0.7); color:#000; text-shadow:0 0; height:600px; overflow-y:scroll;">
+			<div class="content special">
 
 			<ul>
 <li>Content Management Systems &ndash; Including Wordpress, Joomla, Drupal, Sharepoint, Sitefinity and Ektron. I have some knowledge in PHP, ASP.NET and Twig through Timber.</li>
@@ -304,7 +345,7 @@ header{
 			<header>
 				<h2>RLA Group - Front End Developer</h2>
 				<h3>August 2015 - February 2017</h3>
-				<a href="https://www.rla.co.uk" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/logo--white.svg" alt="RLA Logo" class="logo" title="View website"/></a>
+				<a href="https://www.rla.co.uk" target="_blank" class="logo"><img src="logo--white.svg" alt="RLA Logo" title="View website"/></a>
 			</header>
 			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
@@ -312,8 +353,8 @@ header{
 			</div>
 
 			<div class="showcase">
-				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/riva.jpg" alt="Riva Email" height="115%" style="margin:0 -50px 0 0;"/>
-				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/tipo.jpg" alt="Tipo Email" height="115%"/>
+				<img src="examples/riva.jpg" alt="Riva Email" height="115%" style="float:left;"/>
+				<img src="examples/tipo.jpg" alt="Tipo Email" height="115%" style="float:right;"/>
 			</div>
 		</div>
 		<a href="#section2" class="previous-button button">Previous Role ></a>
@@ -324,7 +365,7 @@ header{
 			<header>
 				<h2>Ascesis Media - Front End Developer</h2>
 				<h3>August 2015 - February 2017</h3>
-				<a href="http://ascesismedia.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/ascesis_logo.svg" alt="Ascesis Logo" class="logo" title="View website"/></a>
+				<a href="http://ascesismedia.com/" target="_blank" class="logo"><img src="ascesis_logo.svg" alt="Ascesis Logo" title="View website"/></a>
 			</header>
 			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
@@ -332,7 +373,7 @@ header{
 			</div>
 
 			<div class="showcase">
-				<iframe src="//foxes.co.uk" width="1100" height="115%"></iframe>
+				<iframe src="//foxes.co.uk"></iframe>
 			</div>
 		</div>
 		<a href="#section3" class="previous-button button">Previous Role ></a>
@@ -343,7 +384,7 @@ header{
 			<header>
 				<h2>Appius - Front End Developer</h2>
 				<h3>August 2015 - February 2017</h3>
-				<a href="http://www.appius.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/appius_logo.svg" alt="Appius Logo" class="logo" title="View website"/></a>
+				<a href="http://www.appius.com/" target="_blank" class="logo"><img src="appius_logo.svg" alt="Appius Logo" title="View website"/></a>
 			</header>
 
 			<div class="wrap description tcentre w60 centreAlign contentFormat">
@@ -352,7 +393,7 @@ header{
 			</div>
 			
 			<div class="showcase">
-				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/teachersbs.png" alt="Teachers Building Society" height="115%"/>
+				<img src="examples/teachersbs.png" alt="Teachers Building Society" height="115%"/>
 			</div>
 		</div>
 		<a href="#section4" class="previous-button button">Previous Role ></a>
@@ -362,14 +403,14 @@ header{
 			<header>
 				<h2>Brainstormers - Front End Developer</h2>
 				<h3>August 2015 - February 2017</h3>
-				<a href="http://www.thinkbrainstormers.co.uk/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/brainstormers_logo.svg" alt="Brainstormers Logo" class="logo" title="View website"/></a>
+				<a href="http://www.thinkbrainstormers.co.uk/" target="_blank" class="logo"><img src="brainstormers_logo.svg" alt="Brainstormers Logo" title="View website"/></a>
 			</header>
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
 				<p>A Bournemouth based website development company. I have completed numerous websites for up and coming and new businesses, finished to a professional standard.  Good customer service skills were also required. While working for Brainstormers I carried out a number of SEO related tasks on a monthly basis for most clients, this involved writing a monthly report on what work had been carried out and which work was remaining to achieve the client's goals.</p>
 			</div>
 			<div class="showcase">
-				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/bryant.png" alt="Bryant Furnishings" height="115%"/>
+				<img src="examples/bryant.png" alt="Bryant Furnishings" height="115%"/>
 			</div>
 		</div>
 		<a href="#about" class="previous-button button">To Begining ></a>
