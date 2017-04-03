@@ -86,6 +86,22 @@ section{
 	right:auto;
 }
 
+.brands{
+	margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; width: 13%;
+}
+.brands img{
+	width: 100%;
+	height:auto;
+}
+
+.brands.first{
+	margin-top:0;
+}
+
+.brands.last{
+	margin-bottom:0;
+}
+
 @-webkit-keyframes bounce {
  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
  40% {-webkit-transform: translateY(-30px);}
@@ -130,18 +146,22 @@ section{
 	max-width: 36%;
 	text-shadow:1px 1px 5px #444;
 	font-size:19px;
+	z-index:1;
+}
+header{
+	padding:20px 10% 5px 10%;
+	background: #556475;;
 }
 .wrap{
 	padding:20px 10% 5px 10%;
-	background: #556475;
 }
 .logo{
 	position:absolute;
 	top:3.5%;
 	right:10%;
 	margin:0 auto;
-	height:80px;
-	max-width: 425px;
+	max-height:80px;
+	max-width: 33%;
 	opacity:0.75;
 }
 .showcase{
@@ -155,23 +175,48 @@ section{
 	border:0;
 	-webkit-transform-origin-x: 100%;
 }
+.profile-image{
+	border:5px solid white; position:absolute; right:10%;    top: 37%;
+    transform: translateY(-50%);
+}
+@media screen and (max-width: 1350px) {
+	.content{
+		transform:translateY(0);
+		position: relative;
+		max-width: 100%;
+	}
+	.showcase{
+		position: relative;
+		left:0;
+		right:0;
+		text-align: center;
+	}
+	.showcase iframe, .showcase img{
+		-webkit-transform-origin-y:0;
+		-webkit-transform-origin-x:50%;
+	}
+	.profile-image{
+		display: none;
+	}
+}
 </style>
 </head>
 <body>
 
 
 		<section id="about">
-		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<div style="position:relative;">
-				<h2 style="font-size:40px;margin:35px 0;display:inline-block;">A bit about me</h2>
-			</div>
+		
+			<header style="position:relative;">
+				<h2 style="font-size:32px;margin:35px 0;display:inline-block;">A bit about me</h2>
+			</header>
+			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
 				I'm a Bournemouth based Web Developer who loves all things web related from SEO to Web Design. I enjoy the ocassional cycleride along Bournemouth's stunning beachfront as its not only a opportunity to keep physically fit but also a chance to take stunning pictures/videos.<br/><br/>
 
 				Please feel free to have a browse through my CV using the navigation buttons that can be found along the bottom of the page. Hopefully you'll find it alot less boring than trawling through a word document.
 			</div>
 
-			<img src="https://pbs.twimg.com/profile_images/847791211637354497/s_mDqgyS.jpg" width="200" height="200" style="border:5px solid white; position:absolute; right:10%;"/>
+			<img src="https://pbs.twimg.com/profile_images/847791211637354497/s_mDqgyS.jpg" width="200" height="200" class="profile-image"/>
 
 
 
@@ -180,46 +225,47 @@ section{
 	</section>
 
 			<section id="brands-worked-with">
-		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<div style="position:relative;">
-				<h2 style="font-size:40px;margin:35px 0; display:inline-block;">Brands worked with...</h2>
-				<h2 style="font-size:40px;margin:35px 0; right:0; float:right;">Technical skills/software experience</h2>
-			</div>
-			<div class="content" style="margin:-10px; top:59%;">
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmwmini.svg" width="125" height="125"/>
+		
+			<header style="position:relative;">
+				<h2 style="font-size:32px;margin:35px 0; display:inline-block;">Brands worked with...</h2>
+				<h2 style="font-size:32px;margin:35px 0; right:0; float:right;">Technical skills/software experience</h2>
+			</header>
+			<div class="wrap description tcentre w60 centreAlign contentFormat">
+			<div class="content" style="margin:-10px; top:59%; max-height:602px; overflow-y:auto; text-align:center;">
+				<div class="brands first">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmwmini.svg" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmw.png" width="125" height="125"/>
-				</div><div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volvo.png" width="125" height="125"/>
+				<div class="brands first">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/bmw.png" />
+				</div><div class="brands first">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volvo.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volkswagen.png" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/volkswagen.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/ford.png" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/ford.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/scania.svg" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/scania.svg" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/jeep.svg" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/jeep.svg" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/fiat.png" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/fiat.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/alfa.png" width="125" height="125"/>
+				<div class="brands">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/alfa.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/peugeot.png" width="125" height="125"/>
+				<div class="brands last">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/peugeot.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/citroen.png" width="125" height="125"/>
+				<div class="brands last">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/citroen.png" />
 				</div>
-				<div style="margin:10px; padding:5px; background:rgba(255,255,255,0.7); display:inline-block; height:135px;">
-					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/dlr.png" width="125" height="125"/>
+				<div class="brands last">
+					<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/clients/dlr.png"/>
 				</div>
 			</div>
 
@@ -254,9 +300,13 @@ section{
 	</section>
 			
 	<section id="section1">
-		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h2>RLA Group - Front End Developer</h2>
-			<h3>August 2015 - February 2017</h3>
+		
+			<header>
+				<h2>RLA Group - Front End Developer</h2>
+				<h3>August 2015 - February 2017</h3>
+				<a href="https://www.rla.co.uk" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/logo--white.svg" alt="RLA Logo" class="logo" title="View website"/></a>
+			</header>
+			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
 				<p>The RLA Group are an advertising agency based in Christchurch predominantly working with Automotive manufacturers such as The Fiat Group (Fiat, Jeep, Abarth, Alfa Romeo, Chrysler), Volkswagen, Ford, Peugeot & Citroen, BMW & Mini, Scania and Kia Motors, in most cases on a weekly basis. The majority  have mainly worked on building HTML emails both from scratch and using existing infrastructure.</p>
 			</div>
@@ -266,14 +316,17 @@ section{
 				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/tipo.jpg" alt="Tipo Email" height="115%"/>
 			</div>
 		</div>
-		<a href="https://www.rla.co.uk" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/logo--white.svg" alt="RLA Logo" class="logo" title="View website"/></a>
 		<a href="#section2" class="previous-button button">Previous Role ></a>
 		<a href="#brands-worked-with" class="back-button button">< Back</a>
 	</section>
 	<section id="section2">
-		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h2>Ascesis Media - Front End Developer</h2>
-			<h3>August 2015 - February 2017</h3>
+		
+			<header>
+				<h2>Ascesis Media - Front End Developer</h2>
+				<h3>August 2015 - February 2017</h3>
+				<a href="http://ascesismedia.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/ascesis_logo.svg" alt="Ascesis Logo" class="logo" title="View website"/></a>
+			</header>
+			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
 				<p>During my employment at Ascesis Media, I helped to create websites for local companies  and also carriedout SEO improvements. Working closely as a team with other developers and designers,  I also helped to improve the company's infrastructure in terms of organising web files and password storage I became a confident user of Slack to keep in touch with other members of the team.</p>
 			</div>
@@ -282,14 +335,18 @@ section{
 				<iframe src="//foxes.co.uk" width="1100" height="115%"></iframe>
 			</div>
 		</div>
-		<a href="http://ascesismedia.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/ascesis_logo.svg" alt="Ascesis Logo" class="logo" title="View website"/></a>
 		<a href="#section3" class="previous-button button">Previous Role ></a>
 		<a href="#section1" class="back-button button">< Back</a>
 	</section>
 	<section id="section3">
-		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h2>Appius - Front End Developer</h2>
-			<h3>August 2015 - February 2017</h3>
+		
+			<header>
+				<h2>Appius - Front End Developer</h2>
+				<h3>August 2015 - February 2017</h3>
+				<a href="http://www.appius.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/appius_logo.svg" alt="Appius Logo" class="logo" title="View website"/></a>
+			</header>
+
+			<div class="wrap description tcentre w60 centreAlign contentFormat">
 			<div class="content">
 				<p>Appius are a Bournemouth based company which maintains and builds websites for high end clients (These include DLR London, Electricity North West and Teachers Building Society). I worked closely with designers and other developers to achieve the best possible results for both clients and the company itself.  One of the most important tasks I had to carry out was testing the functionality of web pages and comparing the appearance to the original design.</p>
 			</div>
@@ -298,14 +355,16 @@ section{
 				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/teachersbs.png" alt="Teachers Building Society" height="115%"/>
 			</div>
 		</div>
-		<a href="http://www.appius.com/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/appius_logo.svg" alt="Appius Logo" class="logo" title="View website"/></a>
 		<a href="#section4" class="previous-button button">Previous Role ></a>
 		<a href="#section2" class="back-button button">< Back</a>
 	</section>
 		<section id="section4">
+			<header>
+				<h2>Brainstormers - Front End Developer</h2>
+				<h3>August 2015 - February 2017</h3>
+				<a href="http://www.thinkbrainstormers.co.uk/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/brainstormers_logo.svg" alt="Brainstormers Logo" class="logo" title="View website"/></a>
+			</header>
 		<div class="wrap description tcentre w60 centreAlign contentFormat">
-			<h2>Brainstormers - Front End Developer</h2>
-			<h3>August 2015 - February 2017</h3>
 			<div class="content">
 				<p>A Bournemouth based website development company. I have completed numerous websites for up and coming and new businesses, finished to a professional standard.  Good customer service skills were also required. While working for Brainstormers I carried out a number of SEO related tasks on a monthly basis for most clients, this involved writing a monthly report on what work had been carried out and which work was remaining to achieve the client's goals.</p>
 			</div>
@@ -313,7 +372,6 @@ section{
 				<img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/examples/bryant.png" alt="Bryant Furnishings" height="115%"/>
 			</div>
 		</div>
-		<a href="http://www.thinkbrainstormers.co.uk/" target="_blank"><img src="https://cdn.rawgit.com/webdeveloperbournemouth/lockscreen/master/brainstormers_logo.svg" alt="Brainstormers Logo" class="logo" title="View website"/></a>
 		<a href="#about" class="previous-button button">To Begining ></a>
 		<a href="#section3" class="back-button button">< Back</a>
 	</section>
