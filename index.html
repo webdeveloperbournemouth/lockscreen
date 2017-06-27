@@ -269,6 +269,31 @@ header{
 	}
 }
 </style>
+	<script>
+		function requestFullScreen() {
+
+  var el = document.body;
+
+  // Supports most browsers and their versions.
+  var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen 
+  || el.mozRequestFullScreen || el.msRequestFullScreen;
+
+  if (requestMethod) {
+
+    // Native full screen.
+    requestMethod.call(el);
+
+  } else if (typeof window.ActiveXObject !== "undefined") {
+
+    // Older IE.
+    var wscript = new ActiveXObject("WScript.Shell");
+
+    if (wscript !== null) {
+      wscript.SendKeys("{F11}");
+    }
+  }
+}
+	</script>
 </head>
 <body>
 
@@ -290,7 +315,7 @@ header{
 
 
 	</div>
-		<a href="#brands-worked-with" class="previous-button button first-button">More about me ></a>
+		<a href="#brands-worked-with" class="previous-button button first-button" onclick="requestFullScreen()">More about me ></a>
 	</section>
 
 			<section id="brands-worked-with">
